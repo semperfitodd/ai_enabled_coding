@@ -15,23 +15,6 @@ How to use chain-of-thought prompting or iterative queries, where the output of 
 
 ---
 
-# Module 1: Modularizing Tasks for AI Coding
-
-## Focus
-Techniques for breaking down complex software tasks into smaller, modular prompts to get better results from AI coding assistants. This module covers prompt engineering strategies that improve controllability, accuracy, and debugging when using AI for coding. Senior engineers will learn to design multi-step workflows where AI handles well-defined subtasks rather than attempting to solve an entire problem at once.
-
----
-
-## Task Decomposition Strategies
-Best practices for splitting a large coding project or feature into discrete prompts or steps. Complex, multi-step requests can confuse AI models; instead, tasks should be segmented into manageable chunks. For example, rather than asking an AI to “build a full financial report generation module,” first prompt it to outline the module’s components, then implement each component sequentially. This approach aligns with the “first commandment” of effective prompting: break problems into smaller parts.
-
----
-
-## Prompt Chaining and Iteration
-How to use chain-of-thought prompting or iterative queries, where the output of one AI prompt becomes the input for the next. We will demonstrate chaining with a real scenario – e.g., using ChatGPT to plan a feature, then refining each part step-by-step. This enhances the AI’s performance on each subtask, ensuring that nothing is overlooked along the way.
-
----
-
 ## Example Application: Modular AI Workflow for a Risk Scoring Feature
 
 ### Objective
