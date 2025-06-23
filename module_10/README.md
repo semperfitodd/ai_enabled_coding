@@ -42,6 +42,43 @@ The job isn’t to use AI. It’s to make AI **useful, reliable, and sustainable
 
 ---
 
+### Celebrate AI Wins and Share What Works
+
+Continuous improvement isn’t just about fixing what’s broken—it’s also about doubling down on what’s working. As part of fostering an innovative and future-focused engineering culture, we encourage all team members to **share successes with AI tools**.
+
+#### Sharing Wins: Why It Matters
+
+When engineers share how AI helped them:
+- It inspires others to explore similar workflows.
+- It builds confidence in the tools and our practices.
+- It surfaces repeatable patterns that can be scaled across teams.
+- It reinforces that we value both innovation and initiative.
+
+#### How to Share
+
+- Post short AI success stories in the team Slack/Teams channel.  
+  Example: “Used Claude to draft an initial data dictionary. Saved me ~3 hours and kicked off a productive convo with the data team.”
+
+- Bring highlights to monthly team meetings.  
+  Show a “before and after” where AI accelerated progress or improved coverage.
+
+- Document useful prompts or approaches in our internal wiki.  
+  Create reusable templates or scripts others can leverage.
+
+- Nominate impressive use cases for quarterly retros or recognition.  
+  This could be anything from a 10x productivity gain to a novel AI integration that saved a project.
+
+#### Why Leadership Cares
+
+Fortune 500 CTOs aren’t just looking for compliance—they’re looking for **teams that lead with curiosity, creativity, and confidence**. Sharing what works builds:
+- A resilient, self-improving culture.
+- Visibility into how AI accelerates business value.
+- A reputation for innovation among clients and stakeholders.
+
+In short: **Don’t just keep the win—teach the win.**
+
+---
+
 ## Example Application: Refining a Prompt Over Time
 
 ### Objective  

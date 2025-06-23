@@ -40,6 +40,43 @@ Debugging is not outsourcing. If you don’t understand the issue, don’t accep
 
 ---
 
+### I-Assisted Debugging with Human Oversight
+
+AI tools can accelerate the debugging process—but **never replace engineering judgment**. When fixing bugs or resolving test failures, engineers must stay in full control of the review, validation, and verification process.
+
+#### Iterative Debugging in Practice
+
+A developer encountered a failing unit test related to an edge case in a financial calculation. They prompted an AI assistant for help, which returned a potential fix involving a boundary check.  
+Rather than accepting the suggestion outright, the developer:
+
+1. Reviewed the generated diff to ensure business logic was preserved.
+2. Cross-checked the logic against the original test case and edge condition.
+3. Ran the full test suite to confirm all scenarios passed, including performance benchmarks.
+4. Documented the change and tagged it as AI-assisted in the PR description.
+
+This process exemplifies **augmented debugging**—AI may point the way, but the engineer steers the wheel.
+
+#### Testing Tool Integrations
+
+To scale this responsibly, we encourage integration with modern testing frameworks that support AI-enhanced development:
+
+- **IDE plugins** (e.g. GitHub Copilot, Amazon Q Developer): for writing or suggesting tests inline.
+- **CI/CD AI hooks**: suggesting missing edge cases based on coverage gaps.
+- **Static analysis tools**: flagging AI-generated code for deeper inspection.
+- **Model-specific test suites**: ensuring repeatable validation of LLM-generated code against business rules.
+
+#### 💡 Forward-Thinking Practice
+
+By blending AI tooling into an auditable, human-driven testing process, we:
+- **Accelerate quality assurance**, without bypassing controls.
+- **Maintain trust and traceability**, even with LLMs in the loop.
+- **Reinforce engineering ownership** of test-driven development.
+
+In high-compliance environments, our stance is simple:
+> **AI can assist, but engineers remain accountable for every test, every assertion, and every bug fix.**
+
+---
+
 ## Example Application: Testing a Price Calculation Function
 
 ### Objective  

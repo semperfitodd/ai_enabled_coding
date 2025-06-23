@@ -40,6 +40,46 @@ We expect engineers to use AI for acceleration, not delegation. You own the syst
 
 ---
 
+### Where AI Shines — And Where Humans Take Over
+
+To help engineers understand exactly what tasks AI can handle and where human expertise remains essential, we’ve outlined the following guidance:
+
+#### AI-Suitable Tasks (Ideal for LLM Assistance)
+- **Boilerplate generation** (e.g., converting JSON schemas to classes, scaffolding CRUD endpoints)
+- **Documentation stubs & comments** (API method outlines, docstrings, readme sections)
+- **Basic refactoring & formatting** (standardizing code style, renaming variables, simple optimizations)
+- **Unit test skeletons** (setup/teardown code, test case outlines)
+- **Simple data transformations** (e.g., CSV parsing, data validation routines)
+- **Standard CI/CD definitions** (YAML pipeline templates, GitHub Action skeletons)
+
+#### Human-Only Tasks (Require Deep Expertise)
+- **Architectural design** (microservice boundaries, data flow across systems)
+- **Complex business logic or stateful systems** (financial algorithms, transactional state machines)
+- **Performance-critical code** (low-latency services, high-frequency trading loops)
+- **Security-sensitive implementations** (cryptography, secure authentication flows)
+- **Regulatory compliance logic** (e.g., anti-money-laundering, audit trails)
+- **High-stakes error handling** (complex rollback mechanisms, distributed failure recovery)
+
+---
+
+### AI Productivity by the Numbers
+
+Quantifying results ensures leadership clarity and fosters trust in AI adoption.
+
+- **Time savings on coding tasks: 20–50%**  
+  Published metrics show code speed increase of 35–45% and documentation tasks by up to 50%.
+
+- **Copilot speeds development by ~55%**  
+  A controlled study found developers completed tasks 55.8% faster when using GitHub Copilot.
+
+- **Enterprise-grade tasks run ~21% faster**  
+  Google’s AI-assisted debugging trial showed a ~21% reduction in time spent on complex coding tasks.
+
+- **JPMorgan saw a 20% efficiency gain**  
+  The bank credits its AI coding assistant with improving engineering productivity up to 20%.
+
+---
+
 ## Example Application: Accelerating CRUD Service Development
 
 ### Objective  

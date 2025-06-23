@@ -53,6 +53,45 @@ AI tools evolve. So should your workflows. This is about feedback loops, team le
 
 ---
 
+## Key Outcomes
+```
+[Module 0]
+ Introduction
+     ↓
+[Module 1]
+ Modularizing Tasks for AI Coding
+     ↓
+[Module 2]
+ Prompt Engineering Techniques
+     ↓
+[Module 3]
+ Leveraging AI’s Strengths
+     ↓
+[Module 4]
+ Code Review & Validation
+     ↓
+[Module 5]
+ Security Best Practices
+     ↓
+[Module 6]
+ Dependency & IP Management
+     ↓
+[Module 7]
+ Testing & Debugging with AI
+     ↓
+[Module 8]
+ Collaboration & Documentation
+     ↓
+[Module 9]
+ Responsible AI Use
+     ↓
+[Module 10]
+ Continuous Improvement
+```
+Each module stands alone, but together they form a complete, modern framework for AI-enabled engineering—designed specifically for client work in highly regulated industries.
+
+---
+
 ## Your Role in This Series
 
 You’re not here to watch AI write code. You’re here to **engineer workflows that use AI responsibly**. To take ownership of what AI produces. To improve speed *and* quality. To protect client data *and* team standards.

@@ -30,6 +30,49 @@ If your prompt lacks detail, structure, or awareness of how it fits into the bro
 
 ---
 
+### 🧠 Prompt Structure: Assumptions, Edge Cases, and Clarity
+
+To get the most accurate and reliable results from AI, your prompts should anticipate ambiguity and reduce it through specificity and structure. This is especially important when working on production-grade code in regulated environments.
+
+#### Best Practices
+
+- **State assumptions clearly.**  
+  Example:  
+  ```plaintext
+  Assume input data is a well-formed JSON object with keys: "userId", "accountType", and "balance".
+  ```
+
+- **Mention edge cases explicitly.**  
+  Example:  
+  ```plaintext
+  Handle the case where "balance" is null or missing, and return an appropriate error.
+  ```
+
+- **Use structured formats in prompts.**  
+  Large language models respond better to prompts that use clear formatting.  
+  Example:  
+  ```plaintext
+  Input: 
+    {
+      "userId": "123",
+      "accountType": "premium",
+      "balance": 5000
+    }
+
+  Task:
+    Write a Python function that returns the credit risk level for the user based on the accountType and balance.
+
+  Output:
+    One of: "low", "medium", or "high"
+  ```
+
+- **Treat prompts like API contracts.**  
+  When possible, define expected input/output formats and validation rules as part of your prompt.
+
+This structured, assumption-aware approach will reduce misfires, improve result reliability, and align with enterprise coding standards—especially when integrating AI-generated code into client-facing systems.
+
+---
+
 ## Example Application
 *Using ChatGPT and Copilot for Secure API Integration*  
 In this example, an engineer is developing a utility function to retrieve customer data from a web API, with strict requirements for error handling and security. Initially, they ask ChatGPT a generic question and receive a simplistic answer. Recognizing improvement is needed, the engineer applies prompt engineering techniques: they re-prompt ChatGPT with a structured request that specifies the API details (endpoints, parameters) and the need for robust error handling. They also include a persona instruction, telling ChatGPT to act as a security-conscious senior developer, which leads to output that avoids insecure practices (like hard-coding API keys or ignoring exceptions). For each refinement, the code suggestions become more aligned with the enterprise’s standards. After a few prompt iterations, ChatGPT produces a well-structured Python function with proper error checking, logging, and comments. The engineer then uses GitHub Copilot in the IDE to integrate the suggested code into the codebase, leveraging Copilot’s quick in-line completions for minor improvements (such as adding type hints and formatting). This scenario demonstrates how thoughtful prompting and iterative refinement guide the AI to generate code that is reliable and compliant with organizational guidelines, instead of a one-shot naive solution.

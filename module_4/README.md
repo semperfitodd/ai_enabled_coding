@@ -38,6 +38,35 @@ Lazy AI outputs will not be accepted. You can use AI to generate code — but no
 
 ---
 
+### 🔍 AI Code Accountability and Verification
+
+All AI-generated code **must be treated with the same rigor, scrutiny, and standards as human-written code**. There is **zero tolerance** for skipping validation steps simply because code was written or suggested by an AI tool.
+
+#### Mandatory Review Practices
+
+- **Every AI-generated contribution must undergo full code review.**  
+  This includes functionality, logic correctness, security posture, and test coverage.
+
+- **AI output must never be blindly accepted.**  
+  Regardless of source (ChatGPT, Copilot, Claude, etc.), engineers are accountable for understanding and verifying the behavior of every line before it is committed.
+
+- **Engineers retain full ownership.**  
+  If AI contributes to a module, the engineer reviewing the changes is responsible for its quality, correctness, and impact.
+
+- **Same standards. No exceptions.**  
+  Linting, testing, performance benchmarking, and security reviews all apply equally to AI-suggested code. There is no “AI shortcut” to production.
+
+#### Why This Matters
+
+AI is an accelerator, not a replacement for engineering judgment. Our clients, especially in regulated financial sectors, rely on us to ship secure, high-quality code. That means:
+- No AI code bypasses our validation gates.
+- Engineers are accountable for what ships.
+- We apply the **same standards, every time, regardless of source**.
+
+This uncompromising stance ensures quality, builds trust, and reflects the engineering discipline expected from a Fortune 500-grade cloud partner.
+
+---
+
 ## Example Application: Reviewing an AI-Written Utility Function
 
 ### Objective  

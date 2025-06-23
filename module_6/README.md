@@ -15,7 +15,7 @@ AI tools may suggest open-source libraries, but they don’t always check:
 Always treat AI-suggested libraries as **unvetted**. Use tools like:
 
 - **Software Composition Analysis (SCA)** tools: Snyk, OWASP Dependency-Check, GitHub Dependabot  
-- **Package scanners** like pip-audit or npm audit  
+- **Package scanners** like pip-audit or npm audit
 - Manual inspection of library documentation and GitHub activity
 
 ---
@@ -36,6 +36,7 @@ At BSC, dependency and licensing risks are taken seriously. That means:
 - **Every AI-suggested dependency must be verified** — no exceptions  
 - You are expected to know what every import does, what it depends on, and how it’s maintained  
 - If a code block feels like it came from Stack Overflow or a public repo, **assume it’s not safe until verified**
+- Always automate dependency checks in your CI/CD pipeline
 
 We don’t build on shaky foundations. If you don’t understand a dependency, don’t use it. If you wouldn’t defend it in a client audit, don’t commit it. Use AI to *suggest*, not to *decide*.
 

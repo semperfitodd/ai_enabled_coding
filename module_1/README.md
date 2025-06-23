@@ -49,10 +49,105 @@ The function should take a user ID and return a score.
 List each component and what it does.
 ```
 
+Claude's output from prompt
+```python
+def calculate_financial_risk_score(user_id: str) -> float:
+    """
+    Calculates a comprehensive financial risk score for a user.
+    
+    Args:
+        user_id: Unique identifier for the user
+    
+    Returns:
+        Financial risk score (0-100, higher = riskier)
+    """
+    # Component 1: Data Retrieval
+    user_data = fetch_user_financial_data(user_id)  # Gets credit/transaction history
+    
+    # Component 2: Credit History Analysis
+    credit_score = calculate_credit_subscore(
+        user_data['payment_history'],
+        user_data['credit_utilization']
+    )
+    
+    # Component 3: Transaction Behavior Analysis
+    transaction_risk = analyze_transaction_patterns(
+        user_data['transaction_frequency'],
+        user_data['large_transactions']
+    )
+    
+    # Component 4: Account Stability Assessment
+    stability_score = assess_account_stability(
+        user_data['account_age'],
+        user_data['balance_volatility']
+    )
+    
+    # Component 5: External Risk Factors
+    market_risk = get_market_risk_indicator()  # External economic data
+    
+    # Component 6: Weighted Aggregation
+    return (
+        0.4 * credit_score +
+        0.3 * transaction_risk +
+        0.2 * stability_score +
+        0.1 * market_risk
+    )
+```
+
 #### ❌ Bad Prompt
 ```
 Write a risk scoring function.
 ```
+
+Claude's output from prompt
+```python
+def calculate_risk_score(likelihood: float, impacts: list, method: str = 'highest') -> float:
+    """
+    Calculates risk score using likelihood and impact assessments.
+    
+    Args:
+        likelihood: Probability of risk occurring (0-1 scale or 1-5 ordinal scale).
+        impacts: List of impact scores for different categories (e.g., [financial, operational]).
+        method: Aggregation method for impacts: 'highest', 'average', or 'average_individual'.
+    
+    Returns:
+        Computed risk score (higher = more severe).
+    
+    Raises:
+        ValueError: For invalid methods or empty impacts.
+    """
+    if not impacts:
+        raise ValueError("At least one impact score required")
+    
+    # Impact aggregation methods
+    if method == 'highest':
+        overall_impact = max(impacts)
+    elif method == 'average':
+        overall_impact = sum(impacts) / len(impacts)
+    elif method == 'average_individual':
+        individual_scores = [likelihood * impact for impact in impacts]
+        overall_impact = sum(individual_scores) / len(individual_scores)
+    else:
+        raise ValueError("Invalid method. Use 'highest', 'average', or 'average_individual'")
+    
+    return likelihood * overall_impact
+```
+
+#### Why is the output better from the `Good Prompt`?
+
+1. Domain-Specific Design
+2. Tightly integrates with actual financial metrics: credit history, transactions, stability, external market conditions.
+3. Modular and Extensible
+4. Each component (e.g. calculate_credit_subscore, analyze_transaction_patterns) is decoupled, enabling:
+5. Unit testing
+6. Swappable logic for each subscore
+7. Auditability and compliance review
+8. Realistic Aggregation
+9. Uses weighted scoring, which is how most real-world financial risk engines operate.
+10. Easy to adjust weights or incorporate additional factors (e.g., fraud risk, employment history).
+11. Traceable and Explainable
+12. Each part can be traced for explainability — crucial in regulated environments.
+13. Supports compliance requirements like model governance and bias audits.
 
 ---
 

@@ -40,6 +40,39 @@ You can use AI to accelerate development, but you cannot outsource your judgment
 
 ---
 
+### AI Security Best Practices in Regulated Environments
+
+Security must be a first-class concern when working with AI-assisted development. The flexibility of AI comes with risk: improperly scoped prompts, insecure suggestions, and leakage of sensitive data can lead to vulnerabilities or compliance violations.
+
+#### ⚠Hypothetical Cautionary Example
+
+A developer used an AI assistant to generate a Kubernetes deployment config for a test environment. The AI included a sample `config.yaml` that contained a hardcoded API key and embedded credentials.  
+The developer didn’t notice and nearly committed the file. Fortunately, our pre-merge scanning pipeline flagged the sensitive string and blocked the push.
+
+**Lesson:**  
+AI will confidently fabricate insecure code if not explicitly constrained. It is the engineer’s job to guide, validate, and sanitize every output.
+
+#### Enterprise Security Practices
+
+- **Never include secrets, tokens, or production data in prompts.**
+- **AI-generated code must pass the same SAST and DAST checks** as human code.
+- **Treat all AI outputs as untrusted until reviewed.**
+- **Disable autocomplete or in-editor AI suggestions for sensitive config files or secret-handling modules.**
+
+#### Compliance Alignment
+
+In a highly regulated enterprise context, our AI security standards directly support:
+- **SOC 2** – Controlling access, monitoring changes, and auditing all contributions.
+- **GDPR & CCPA** – Preventing leakage of PII into third-party AI tools or prompts.
+- **Internal data governance** – Protecting sensitive data flow and upholding internal security policies.
+- **Any other relevant compliance frameworks** – AI tooling must align with the same standards as our codebase.
+
+Engineers are expected to treat AI tooling as **non-compliant by default** until outputs are verified, sanitized, and approved. This posture ensures we remain in line with enterprise auditability and risk management expectations.
+
+By proactively embedding security practices into AI usage, we avoid the trap of “move fast, break everything” and instead move fast **without** breaking trust.
+
+---
+
 ## Example Application: Securing an AI-Suggested API Handler
 
 ### Objective  

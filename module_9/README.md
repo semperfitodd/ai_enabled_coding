@@ -42,6 +42,54 @@ This isn’t about covering your tracks — it’s about building a culture of t
 
 ---
 
+### ⚖️ Responsible AI Use: Caution and Traceability
+
+Our stance on AI is clear: it must be used responsibly, with guardrails, and in alignment with our ethical and regulatory standards. That includes **knowing when not to use it**, and ensuring that when we do, it's fully auditable.
+
+#### What-If Scenario
+
+Imagine an engineer debugging a rare edge case involving the behavior of a proprietary pricing engine used in FX trades. To get help from an AI assistant, they paste a chunk of log output—including internal error codes and obscure product identifiers—into the prompt.
+
+Unbeknownst to them, the error code structure and identifiers are **internally classified**, representing patterns not publicly documented. In some jurisdictions, even this metadata can constitute **regulated business logic** under financial secrecy laws.
+
+This is exactly the seemingly innocuous data that **must never be shared** with external AI systems.
+
+Even anonymized inputs can leak business logic, platform architecture, or internal naming conventions—any of which could pose a **security, IP, or compliance risk** if exposed.
+
+---
+
+### Auditability: Trust Through Traceability
+
+To meet enterprise-grade governance standards, engineers must maintain traceability of AI contributions.
+
+#### Required Practices
+
+- **Tag all AI-assisted PRs.**  
+  Include a note in the pull request or commit message such as:  
+  `"AI-assisted: ChatGPT used to generate error handling logic"`
+
+- **Log the prompts used for major changes.**  
+  For significant contributions (e.g., code generation, test design, or documentation), include the prompt as a comment block or attach it in the PR description.
+
+- **Use project-level changelogs or wikis** to track AI tool usage patterns, lessons learned, and adjusted guardrails over time.
+
+- **Automate where possible.**  
+  Teams are encouraged to explore tooling that detects AI-generated code blocks or prompts engineers to tag contributions at commit time.
+
+---
+
+### Why This Matters
+
+Responsible AI use isn’t just an engineering issue—it’s a **trust issue**. Our clients operate in highly regulated industries. They expect:
+
+- A full audit trail of how software was developed.
+- Clarity on where generative AI influenced logic or documentation.
+- Confidence that **sensitive data and business logic never left our boundary of control**.
+
+By hardening our AI development practices with traceability and caution, we not only protect our clients—we demonstrate that **we lead by example** in secure, ethical, and forward-thinking AI enablement.
+
+---
+
 ## Example Application: Secure Use of AI in a Compliance Module
 
 ### Objective  
