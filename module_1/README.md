@@ -25,6 +25,17 @@ Use ChatGPT to modularly develop a `riskScore(user)` function that:
 
 ---
 
+## BSC Expectations: Decomposition is Design, Not Delegation  
+At BSC, modularizing a problem for AI is a **design skill**, not a shortcut. Engineers are expected to demonstrate:
+
+- An understanding of **how each prompt fits** into the larger system  
+- A clear mental model of **dependencies, inputs, and expected outputs**  
+- Strategic decomposition that anticipates **future extension and refactoring**
+
+AI should not be handed vague, unstructured tasks. If you’re not thinking through how the pieces connect, you’re not engineering — you’re just delegating. The value isn’t in asking AI to build something *quick* — it’s in using your experience to *guide* AI precisely, building maintainable, auditable, and aligned code from the start.
+
+---
+
 ### Step-by-Step Prompts with Good and Bad Examples
 
 ---
@@ -137,7 +148,7 @@ Write the whole thing that calculates the risk.
 
 ---
 
-## 🎯 Summary
+## Summary
 
 This module demonstrates the value of **prompt chaining** and **task decomposition** in AI-assisted coding. Rather than asking for a complete solution in one go, we decompose the work, iterate on each step, and **preserve control** while speeding up development. You stay the architect — AI handles the grunt work.
 
@@ -145,7 +156,7 @@ This module demonstrates the value of **prompt chaining** and **task decompositi
 
 ## ✅ Do / ❌ Don’t
 
-| Do                                                                 | Don’t                                                                 |
+| ✅ **Do**                                                                  | ❌ **Don’t**                                                                 |
 |--------------------------------------------------------------------|------------------------------------------------------------------------|
 | Break complex work into small, modular subtasks and provide those pieces to the AI one at a time. | Don’t feed the AI a huge, monolithic problem. Overly broad requests confuse the model and produce unpredictable code. |
 | Iteratively refine the AI’s output by building on previous results. | Don’t skip intermediate steps. If the AI’s first answer is off, refine the prompt and try again instead of giving up. |
