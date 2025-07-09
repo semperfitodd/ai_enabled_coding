@@ -6,6 +6,12 @@ This series is designed for senior engineers — the ones building core systems,
 
 ---
 
+## Watch the Training Introduction Video
+
+[![Watch the video](https://img.youtube.com/vi/TAbpOwRffKY/maxresdefault.jpg)](https://www.youtube.com/watch?v=TAbpOwRffKY)
+
+---
+
 ## Why This Training Is Critical
 
 AI code assistants are here. They aren’t going away. But neither are security audits, design reviews, or production SLAs. This training gives you the skills to:
